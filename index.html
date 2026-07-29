@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Gradient Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>CSS Gradient Generator</h1>
+    <p class="para">Choose Orientation</p>
+    <div class="container-direction">
+      <button data-direction="to top left" class="direction , activeBtn">
+        ↖
+      </button>
+      <button data-direction="to right" class="direction">→</button>
+      <button data-direction="to bottom right" class="direction">↘</button>
+      <button data-direction="to bottom" class="direction">↓</button>
+      <button data-direction="to bottom left" class="direction">↙</button>
+      <button data-direction="to left" class="direction">←</button>
+      <button data-direction="to top" class="direction">↑</button>
+      <button data-direction="to top right" class="direction">↗</button>
+    </div>
+    <p class="para">Enter Colors</p>
+    <div class="color-picker-area">
+      <div class="first-picker">
+        <input type="color" value="#e33fce" id="color1" class="colorBox" />
+       <br>
+        <input type="text" value="#e33fce" id="input-text1" class="textBox" />
+      </div>
+      <div class="second-picker">
+        <input type="color" value="#91ac56" id="color2" class="colorBox" />
+        <br>
+        <input type="text" value="#91ac56" id="input-text2" class="textBox" />
+      </div>
+    </div>
+    <div class="btn-area">
+      <button id="generate-btn">🚀 GENERATE</button>
+      <button id="auto-gradient-btn">🎲 AUTO GRADIENT</button>
+    </div>
+
+    <div class="copy-Area">
+     <div class="copy-header">
+       <p>CSS Code:</p>
+      <button id="copy-btn">copy</button>
+    </div>
+      
+      <code class="code">background-image: linear-gradient(to top, #e33fce, #91ac56)</code>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

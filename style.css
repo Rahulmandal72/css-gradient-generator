@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-image: linear-gradient(to top, #e33fce, #91ac56);
+     min-height: 100vh;
+
+
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+     color: #ffffff;
+}
+.para{
+    text-align: center;
+    padding-top: 20px;
+    font: 1.2em sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+}
+.container-direction{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+.direction{
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+   margin: 0 10px;
+   border-radius: 50%;
+}
+
+.color-picker-area{
+    margin-top: 30px;
+  
+   
+}
+.colorBox{
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+}
+.textBox{
+    width: 80px;
+    height: 30px;
+    border-radius: 10%;
+}
+.color-picker-area{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+   
+}
+.first-picker{
+    
+   display: flex;
+   flex-direction: column;
+
+  
+   
+}
+.second-picker{
+     display: flex;
+   flex-direction: column;
+
+}
+.btn-area{
+    display: flex;
+    justify-content: center;
+}
+#generate-btn{
+    height: 40px;
+    width: 120px;
+    margin: 20px 40px;
+    border: 1px solid black;
+    border-radius: 30%;
+    background: #1fd1c1;
+}
+#auto-gradient-btn{
+    height: 40px;
+    width: 200px;
+    margin: 20px 0px;
+    border: 1px solid black;
+    border-radius: 30%;
+    background: #ff6b6b;
+
+}
+.copy-Area{
+   width: 560px;
+   height: 82px;
+   background-color: rgba(229, 229, 205, 0.145);
+   margin: 30px auto;
+   
+
+   
+   
+}
+
+.copy-header{
+    padding: 10px;
+    display: flex;
+   justify-content: space-between;
+   
+   
+}
+.copy-header p{
+    display: inline;
+}
+
+.code{
+      display: block;
+      color: #ffffff;
+     padding: 0px 60px;
+    font-size: 13px;
+     
+}
+
+ 
