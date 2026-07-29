@@ -33,9 +33,18 @@ h1{
     width: 50px;
     font-size: 30px;
    margin: 0 10px;
+   border: 1px solid #ffffff;
    border-radius: 50%;
+   background-color: transparent;
+   color: #ffffff;
+   cursor: pointer;
 }
 
+
+.activeBtn{
+    background: #fff;
+    color: #333;
+}
 .color-picker-area{
     margin-top: 30px;
   
@@ -79,16 +88,20 @@ h1{
     width: 120px;
     margin: 20px 40px;
     border: 1px solid black;
-    border-radius: 30%;
+    border-radius:8px;
     background: #1fd1c1;
+     color: #ffffff;
+    font-weight: 700;
 }
 #auto-gradient-btn{
     height: 40px;
     width: 200px;
     margin: 20px 0px;
     border: 1px solid black;
-    border-radius: 30%;
+    border-radius: 8px;
     background: #ff6b6b;
+    color: #ffffff;
+    font-weight: 700;
 
 }
 .copy-Area{
@@ -121,4 +134,16 @@ h1{
      
 }
 
+#input-text1{
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#input-text2{
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+ 
  
