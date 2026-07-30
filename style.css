@@ -92,6 +92,7 @@ h1{
     background: #1fd1c1;
      color: #ffffff;
     font-weight: 700;
+     cursor: pointer;
 }
 #auto-gradient-btn{
     height: 40px;
@@ -102,6 +103,7 @@ h1{
     background: #ff6b6b;
     color: #ffffff;
     font-weight: 700;
+     cursor: pointer;
 
 }
 .copy-Area{
@@ -133,7 +135,14 @@ h1{
     font-size: 13px;
      
 }
-
+#copy-btn{
+    height: 2em;
+    width: 5em;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    
+}
 #input-text1{
     font-size: 15px;
     font-weight: 700;
