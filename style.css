@@ -1,158 +1,296 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-
-    background-image: linear-gradient(to top, #e33fce, #91ac56);
-     min-height: 100vh;
-
-
-}
-h1{
-    text-align: center;
-    padding-top: 10px;
-     color: #ffffff;
-}
-.para{
-    text-align: center;
-    padding-top: 20px;
-    font: 1.2em sans-serif;
-    font-weight: 800;
-    color: #ffffff;
-}
-.container-direction{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    
-}
-.direction{
-    height: 50px;
-    width: 50px;
-    font-size: 30px;
-   margin: 0 10px;
-   border: 1px solid #ffffff;
-   border-radius: 50%;
-   background-color: transparent;
-   color: #ffffff;
-   cursor: pointer;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-.activeBtn{
-    background: #fff;
-    color: #333;
-}
-.color-picker-area{
-    margin-top: 30px;
-  
-   
-}
-.colorBox{
-    width: 50px;
-    height: 50px;
-    border-radius: 20%;
-}
-.textBox{
-    width: 80px;
-    height: 30px;
-    border-radius: 10%;
-}
-.color-picker-area{
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-   
-}
-.first-picker{
-    
-   display: flex;
-   flex-direction: column;
-
-  
-   
-}
-.second-picker{
-     display: flex;
-   flex-direction: column;
-
-}
-.btn-area{
-    display: flex;
-    justify-content: center;
-}
-#generate-btn{
-    height: 40px;
-    width: 120px;
-    margin: 20px 40px;
-    border: 1px solid black;
-    border-radius:8px;
-    background: #1fd1c1;
-     color: #ffffff;
-    font-weight: 700;
-     cursor: pointer;
-}
-#auto-gradient-btn{
-    height: 40px;
-    width: 200px;
-    margin: 20px 0px;
-    border: 1px solid black;
-    border-radius: 8px;
-    background: #ff6b6b;
-    color: #ffffff;
-    font-weight: 700;
-     cursor: pointer;
-
-}
-.copy-Area{
-   width: 560px;
-   height: 82px;
-   background-color: rgba(229, 229, 205, 0.145);
-   margin: 30px auto;
-   
-
-   
-   
+html {
+  font-size: 16px;
 }
 
-.copy-header{
-    padding: 10px;
-    display: flex;
-   justify-content: space-between;
-   
-   
-}
-.copy-header p{
-    display: inline;
+body {
+  background-image: linear-gradient(to top, #e33fce, #91ac56);
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-.code{
-      display: block;
-      color: #ffffff;
-     padding: 0px 60px;
-    font-size: 13px;
-     
+/* ===========================
+        Heading
+=========================== */
+
+h1 {
+  text-align: center;
+  padding-top: 0.5rem;
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3rem);
 }
-#copy-btn{
-    height: 2em;
-    width: 5em;
-    border-radius: 8px;
-    font-size: 10px;
-    font-weight: 700;
-    
+
+.para {
+  text-align: center;
+  padding: 1.5rem 1rem 0;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.5;
 }
-#input-text1{
+
+/* ===========================
+      Direction Buttons
+=========================== */
+
+.container-direction {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.direction {
+  width: clamp(3rem, 8vw, 3.5rem);
+  height: clamp(3rem, 8vw, 3.5rem);
+  font-size: clamp(1.5rem, 5vw, 2.3rem);
+
+  border: 1px solid #fff;
+  border-radius: 50%;
+
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.direction:hover {
+  background: rgba(255,255,255,.2);
+}
+
+.activeBtn {
+  background: #fff;
+  color: #333;
+}
+
+/* ===========================
+      Color Picker
+=========================== */
+
+.color-picker-area {
+  margin-top: 1.8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.first-picker,
+.second-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .7rem;
+}
+
+.colorBox {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 15%;
+  cursor: pointer;
+}
+
+.textBox {
+  width: 100%;
+  max-width: 6rem;
+  height: 2.2rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+#input-text1,
+#input-text2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ===========================
+          Buttons
+=========================== */
+
+.btn-area {
+  margin-top: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#generate-btn,
+#auto-gradient-btn {
+  width: 100%;
+  max-width: 13rem;
+  height: 2.8rem;
+
+  border: 1px solid #000;
+  border-radius: 8px;
+
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+#generate-btn {
+  background: #1fd1c1;
+}
+
+#auto-gradient-btn {
+  background: #ff6b6b;
+}
+
+#generate-btn:hover,
+#auto-gradient-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ===========================
+        Copy Area
+=========================== */
+
+.copy-Area {
+  width: 90%;
+  max-width: 32rem;
+
+  margin: 2rem auto;
+  padding-bottom: 1rem;
+
+  background: rgba(255,255,255,.12);
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.copy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: .8rem 1rem;
+}
+
+.copy-header p {
+  color: #fff;
+  font-weight: 600;
+}
+
+#copy-btn {
+  width: 5rem;
+  height: 2.2rem;
+
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+.code {
+  display: block;
+
+  padding: 0 1rem;
+
+  color: #fff;
+  font-size: .9rem;
+  line-height: 1.5;
+
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ===========================
+        Tablet
+=========================== */
+
+@media (max-width:768px) {
+
+  .color-picker-area {
+    gap: 1.5rem;
+  }
+
+  .copy-Area {
+    width: 95%;
+  }
+
+}
+
+/* ===========================
+        Mobile
+=========================== */
+
+@media (max-width:600px) {
+
+  html {
     font-size: 15px;
-    font-weight: 700;
+  }
+
+  .container-direction {
+    gap: .6rem;
+  }
+
+  .color-picker-area {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .btn-area {
+    flex-direction: column;
+  }
+
+  #generate-btn,
+  #auto-gradient-btn {
+    max-width: 18rem;
+  }
+
+  .copy-header {
+    flex-wrap: wrap;
+    gap: .5rem;
+  }
+
+  .code {
     text-align: center;
+  }
+
 }
 
-#input-text2{
-    font-size: 15px;
-    font-weight: 700;
-    text-align: center;
+/* ===========================
+      Small Mobile
+=========================== */
+
+@media (max-width:400px) {
+
+  html {
+    font-size: 14px;
+  }
+
+  .direction {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .colorBox {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  #generate-btn,
+  #auto-gradient-btn {
+    width: 95%;
+  }
+
 }
- 
- 
